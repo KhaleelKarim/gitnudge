@@ -1,7 +1,23 @@
 [project]
 name = "gitnudge"
 version = "0.1.0"
-description = "Add your description here"
+description = "Nudge yourself to commit, visualize your commit heatmap, and grade the organic-ness of your git history."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "typer",
+    "rich",
+]
+
+[project.scripts]
+gitnudge = "gitnudge.cli:app"
+git-nudge = "gitnudge.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest",
+]
