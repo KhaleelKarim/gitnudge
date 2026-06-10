@@ -3,7 +3,7 @@ name = "gitnudge"
 version = "0.1.0"
 description = "Nudge yourself to commit, visualize your commit heatmap, and grade the organic-ness of your git history."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
     "typer",
     "rich",
